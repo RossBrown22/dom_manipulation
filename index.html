@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Dream Cars</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="make" class="primary">Make:</label>
+          <input type="text" id="make" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="model" class="primary">Model:</label>
+          <input type="text" id="model" required/>
+        </div>
+
+        <div class="form-item">
+            <label for="year" class="primary">Year:</label>
+            <input type="text" id="year" required/>
+        </div>
+
+        <div class="form-item">
+          <p>Have you driven this car?</p>
+        <div>
+          <input type="radio" id="driven" name="driven" value="Yes, I have driven this car.">
+          <label class="good" for="driven">Yes</label>
+        </div>
+        <div>
+          <input type="radio" id="driven" name="driven" value="No, I haven't driven this car.">
+          <label class="bad" for="driven">No</label>
+        </div>
+
+        <div class="form-item">
+          <p>Have you owned this car?</p>
+        <div>
+          <input type="radio" id="owned" name="owned" value="Yes, I have owned this car.">
+          <label class="good" for="owned">Yes</label>
+        </div>
+        <div>
+          <input type="radio" id="owned" name="owned" value="No, I haven't owned this car.">
+          <label class="bad" for="owned">No</label>
+        </div>
+      </div>
+      <input type="submit" value="Add Car"/>
+    </form>
+
+    <h1>My Dream Cars</h1>
+    <ul class="list-of-dream-cars" id="dream-cars"></ul>
+    <input id="delete-all" type="submit" value="Remove All">
+  </body>
+</html>

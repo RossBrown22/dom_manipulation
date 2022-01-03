@@ -1,0 +1,12 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.good {
+  color: green;
+}
+.bad {
+  color: red;
+}
